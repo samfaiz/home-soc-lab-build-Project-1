@@ -19,7 +19,7 @@ The goal was simple: build a safe environment where I can run attacks and see th
 
 ### 1. A private network with pfSense as the gateway
 
-I used the `172.16.50.0/24` subnet (more on why later). pfSense controls everything:
+I used the `172.16.50.0/24` subnet. pfSense controls everything:
 
 - Static IPs for the important servers
 - DHCP for anything else
@@ -32,7 +32,7 @@ I used the `172.16.50.0/24` subnet (more on why later). pfSense controls everyth
 A working AD setup with:
 
 - DC01 (Windows Server 2022) running AD and DNS
-- WIN10-1 (Windows 11) joined to the domain
+- WIN11-1 (Windows 11) joined to the domain
 - 4 test users — normal, admin, service account
 - OUs for Users / Workstations / Servers / ServiceAccounts
 - DNS works end-to-end: DC01 → pfSense → public DNS
